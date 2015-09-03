@@ -1,0 +1,35 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hitachi.Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:View="using:Hitachi.Common.Controls.View"
+    x:Class="Hitachi.Sample.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <View:HitachiProgress x:Name="PRG1"  Grid.Row="0" Grid.Column="1"   IsActive="True" Foreground="Red"/>
+        <View:HitachiProgress x:Name="PRG2"  Grid.Row="1" Grid.Column="1"    IsActive="True" Foreground="White"/>
+        <View:HitachiProgress x:Name="PRG3" Grid.Row="2" Grid.Column="1"    IsActive="True" Foreground="Blue" />
+
+        <ToggleSwitch x:Name="TGL1" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Stretch" IsOn="True"  Toggled="TGL1_Toggled" />
+        <ToggleSwitch x:Name="TGL2" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Stretch" IsOn="True"  Toggled="TGL2_Toggled"/>
+        <ToggleSwitch x:Name="TGL3" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Stretch" IsOn="True"  Toggled="TGL3_Toggled"/>
+
+    </Grid>
+</Page>

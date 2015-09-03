@@ -1,0 +1,229 @@
+﻿<UserControl
+    x:Class="Hitachi.Common.Controls.View.HitachiProgress"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hitachi.Common.Controls.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400" x:Name="HitachiProgressCntrl">
+    <UserControl.Resources>
+
+
+        <Storyboard x:Name="ProgressStoryBoard" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="Ring1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="720">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="Ring2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuinticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="720">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="Ring3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="720">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="Ring4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="25">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="720">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="Ring5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="25">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="720">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="contentControl">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.95">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ExponentialEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="contentControl1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="contentControl2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="contentControl3">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="contentControl4">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <SineEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="contentControl">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.4">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.3">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="contentControl4">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.8">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="contentControl3">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="contentControl1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.2">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.FontFamily)" Storyboard.TargetName="contentControl2">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.4">
+                    <DiscreteObjectKeyFrame.Value>
+                        <FontFamily>Global User Interface</FontFamily>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Name="dot">
+                <Path  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+              Name="PathLogo"
+              Fill="{Binding Path=Foreground}" 
+              Data="M198.882,65.3366 C198.882,61.4716 183.805,48.439 172.08,43.964 C146.333,32 146.971,27.9744 144.333,45.3333 C142.142,52.5313 142.382,62.6506 143.078,63.5107 C144.875,65.7306 198.882,67.5676 198.882,65.3366 z M125.75,39.75 L120,38.25 L119.736,38.0999 C110.366,40.1686 87.5409,53.4725 80.3611,61.0504 L74.6683,67.0587 L100.76,67.1432 L126.852,67.2274 L126.852,51.8781 z M218.88,190.93 C229.045,163.293 229.131,130.574 219.109,103.521 L214.351,90.6781 L199.066,90.6781 C190.658,90.6781 183.78,91.5698 183.78,92.6597 C183.78,93.7496 185.409,96.4631 187.4,98.6896 C203.979,117.233 203.979,176.687 187.4,195.23 C185.409,197.457 183.78,200.17 183.78,201.26 C183.78,202.35 190.658,203.242 199.066,203.242 L214.351,203.242 z M123.118,187.486 C120.945,186.399 116.889,182.164 114.104,178.074 C105.18,164.968 108.451,142.301 120.364,134.688 C132.099,127.189 147.013,131.98 153.377,145.295 C164.561,168.693 143.703,197.777 123.118,187.486 z M152.806,209.104 C186.595,187.927 186.653,131.325 152.908,109.539 C117.884,86.9275 77.9652,127.46 89.0113,174.418 C97.0789,208.713 127.253,225.12 152.806,209.104 z M80.9036,205.587 C73.2649,191.865 69.191,175.755 69.191,159.272 C69.191,142.788 73.2649,126.678 80.9036,112.956 L86.4516,102.99 L70.4513,102.99 L54.451,102.99 L50.4653,115.301 C41.6676,142.477 40.6671,168.259 47.435,193.39 C53.2206,214.874 53.9498,215.553 71.2235,215.553 L86.4516,215.553 z M164.395,274.779 C176.119,270.304 198.083,254.68 198.083,250.814 C198.083,249.8 170.757,248.971 137.36,248.971 C103.962,248.971 76.6367,249.521 76.6367,250.194 C76.6367,253.352 101.376,270.669 111.625,274.685 C127.174,280.779 148.577,280.817 164.395,274.779 z M134.6,329.771 C128.507,315.788 122.445,310.251 106.357,303.97 C86.4264,296.189 75.3339,288.556 61.5401,273.13 C45.89,255.628 35.8912,235.79 29.0117,208.593 C22.7488,183.834 17.6228,175.795 6.10472,172.669 L0,171.012 L9.13353,166.727 C20.3735,161.454 23.475,156.207 27.748,135.235 C32.54,111.715 41.4783,91.4105 54.9378,73.4695 C69.0062,54.7168 85.4534,42.169 106.344,34.2509 C124.606,27.329 129.734,22.8698 134.523,9.7471 L138.079,0 L142.261,10.163 C148.149,24.475 152.616,28.6415 166.238,32.5297 C195.175,40.7888 225.318,70.2822 238.572,103.305 C242.395,112.829 243.132,117.745 245.522,124.909 C249.364,136.422 253.032,154.259 257.402,159.266 C259.739,161.944 264.641,165.685 268.293,167.578 C274.126,170.6 274.473,171.218 271.14,172.645 C254.261,179.875 251.943,183.387 245.716,211.153 C240.328,235.184 233.101,250.249 218.007,268.916 C203.767,286.528 189.983,296.745 169.081,305.182 C154.603,311.025 146.357,318.498 141.515,330.162 L138.224,338.088 z" 
+              Height="25" Width="25"
+              Stretch="Fill"/>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <Grid >
+            <Grid Name="Ring1"  RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <CompositeTransform/>
+                </Grid.RenderTransform>
+                <ContentControl x:Name="contentControl" ContentTemplate="{StaticResource dot}" Content="{x:Null}" HorizontalAlignment="Center" Opacity="0"></ContentControl>
+            </Grid>
+            <Grid Name="Ring2" RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <CompositeTransform/>
+                </Grid.RenderTransform>
+                <ContentControl x:Name="contentControl1" ContentTemplate="{StaticResource dot}" Content="{x:Null}" HorizontalAlignment="Center" Opacity="0"></ContentControl>
+            </Grid>
+            <Grid Name="Ring3" RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <CompositeTransform/>
+                </Grid.RenderTransform>
+                <ContentControl x:Name="contentControl2" ContentTemplate="{StaticResource dot}" Content="{x:Null}" HorizontalAlignment="Center" Opacity="0"></ContentControl>
+            </Grid>
+            <Grid Name="Ring4"  RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <CompositeTransform/>
+                </Grid.RenderTransform>
+                <ContentControl x:Name="contentControl3" ContentTemplate="{StaticResource dot}" Content="{x:Null}" HorizontalAlignment="Center" Opacity="0"></ContentControl>
+
+            </Grid>
+            <Grid Name="Ring5" RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <CompositeTransform/>
+                </Grid.RenderTransform>
+                <ContentControl x:Name="contentControl4" ContentTemplate="{StaticResource dot}" Content="{x:Null}" d:IsHidden="True" HorizontalAlignment="Center" Opacity="0"></ContentControl>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
