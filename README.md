@@ -7,4 +7,4 @@ This is a sample application created from the example on Jerry Nixons blog on ho
 
 
 
-![Alt text](https://raw.github.com/irdetocustomercentral/WebServiceStudio/master/WebServiceStudioPic.jpg "Web Service Studio Screen Shot") 
+![Alt text](https://raw.github.com/StuartSmith/HitachiProgressRing/master/HitachiProgress.gif "Hitachi Progress Ring Example") 
