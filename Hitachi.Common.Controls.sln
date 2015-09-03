@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hitachi.Common.Controls", "Hitachi.Common.Controls\Hitachi.Common.Controls.csproj", "{3A371106-7A77-4D18-B5A0-3A2CF64D3076}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hitachi.Sample", "Hitachi.Sample", "{0691BCED-CAAB-4789-BC2F-2A8C10D00B3D}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\Users\lenovo-pc\Videos\Captures\Hitachi.Sample.Windows 9_2_2015 9_56_36 PM.mp4 = ..\..\Users\lenovo-pc\Videos\Captures\Hitachi.Sample.Windows 9_2_2015 9_56_36 PM.mp4
-	EndProjectSection
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Hitachi.Sample.Shared", "Hitachi.Sample\Hitachi.Sample.Shared\Hitachi.Sample.Shared.shproj", "{AF84B01A-79F8-48A0-B35B-66BE09FDDFA5}"
 EndProject
