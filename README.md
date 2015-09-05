@@ -3,7 +3,7 @@
 Hitachi Progress Ring
 ================
 
-This is a sample application created from the example on Jerry Nixons blog on how to create a progress ring. 
+This is a sample application created from the example on [Jerry Nixons blog] (http://blog.jerrynixon.com/2015/06/lets-code-build-custom-progress-ring-in.html) blog on how to create a progress ring. 
 
     
 
@@ -11,7 +11,8 @@ I created this demo for two reasons, one I wanted to see how to create a custom 
 
 
 ```
-gem install github-markup
+<!-- sample XAML for using the Hitachi progress Control -->
+<View:HitachiProgress x:Name="PRG1"  Grid.Row="0" Grid.Column="1"   IsActive="True" Foreground="Red"/>
 ```
 
 
